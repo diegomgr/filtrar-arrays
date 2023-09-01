@@ -39,7 +39,7 @@ function showList(array) {
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
 document.addEventListener("DOMContentLoaded", function() {
   const arrayString = strangeArray.filter((element) => typeof element === "string");
-  const arrayStringSorted = arrayString.sort();
+  const arrayStringSorted = arrayString.sort((a, b) => a.localeCompare(b, "fr", { ignorePunctuation: true }));
   showList(arrayStringSorted);  
  
 });
