@@ -35,11 +35,12 @@ function showList(array) {
     container.appendChild(li);
   });
 }
-
-document.addEventListener("DOMContentLoaded", (e) => {
-  const arrayString = strangeArray.filter((element) => typeof element === "string");
-  const  arrayStringSorted = arrayString.sort();
-  showList(arrayStringSorted);  
-  // Escribe tu solución aquí
+ // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
+document.addEventListener("DOMContentLoaded", function() {
+  const arrayString = strangeArray.filter((element) => typeof element === "string");
+  const arrayStringSorted = arrayString.sort();
+  showList(arrayStringSorted);  
+ 
 });
+
